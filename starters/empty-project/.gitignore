@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.env.local
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / 前端
+node_modules/
+dist/
+.vite/
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Docker / Local data
+docker-compose.override.yml
+.data/
+postgres-data/
+redis-data/
+minio-data/
+
+# Claude Code（本地状态）
+.claude/
+
+# 日志
+*.log
+logs/
+
+# 用户实际项目可能要补：
+# - 框架特定（如 .next/、target/）
+# - CI 产物
+# - 临时文件
