@@ -15,8 +15,7 @@
 
 ## 4-Phase 路线图
 
-详见 `../../docs/methodology/AI-Native-开发工作流方法论.md`（如已拷贝）或
-[NovelForge 仓库的方法论文档](../../../README.md)。
+详见 `../../AI-Native-开发工作流方法论.md`（从仓库根目录，如已拷贝到项目根）。
 
 ## 使用方式
 
