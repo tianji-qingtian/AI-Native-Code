@@ -1,7 +1,7 @@
 ---
-name: ai-native
+name: ai-native-code
 description: >
-  AI-Native 开发工作流方法论——用 Claude Code 作为主力开发工具的工程纪律。
+  AI-Native 开发工作流方法论（软件开发特化版）——用 Claude Code 作为主力开发工具的工程纪律。
   同时支持空项目和已有代码库两种场景。
   触发场景：用户说"新项目"、"启动项目"、"AI-native"、"意图凝练"、"契约骨架"、
   "INTENT-GRAPH"、"意图卡"、"Batch"、"Agent Team"、"空项目 starter"、

@@ -6,12 +6,13 @@
 
 - **4-Phase 通用框架**：意图凝练 → 契约骨架 → 机器可读契约网络 → 意图驱动多 Agent
 - **两种场景**：空项目（前瞻）/ 已有源码（考古）
-- **空项目 starter**：`cp -r` 即用
 - **反模式速查表**：踩过的坑都写在里面，别再踩
 - **真实加速幅度**：30-50% / 10-30%，按场景给数，不吹 10x
 
 适用读者：用 Claude Code（或同类 AI agent CLI）作为主力开发工具的工程师 / tech lead。
 只想偶尔让 AI 改改代码的，这套方法论成本不回本。
+
+> 如需通用方法论（适用于写作、设计、研究等任何领域），见 [`https://github.com/tianji-qingtian/AI-Native`](https://github.com/tianji-qingtian/AI-Native) 仓库。
 
 ## 文件一览
 
@@ -19,11 +20,7 @@
 |------|------|
 | [`AI时代的编程范式革命：从人类逻辑PRD到AI-native自主规划.md`](AI时代的编程范式革命：从人类逻辑PRD到AI-native自主规划.md) | 原始文章 |
 | [`AI-Native-开发工作流方法论.md`](AI-Native-开发工作流方法论.md) | 方法论本体：4-Phase 框架 + 空项目 / 已有源码两种场景 + 反模式速查 |
-| [`skills/ai-native/`](skills/ai-native/) | Claude Code skill：方法论的可执行版本，Claude 自动加载并引导 4-Phase 流程 |
-| [`starters/empty-project/`](starters/empty-project/) | 空项目 starter 模板，可直接 `cp -r` 起新项目 |
-
-未来计划：
-- `starters/existing-project/` —— 已有项目接入 playbook（2026-06-09 之后）
+| [`skills/ai-native-code/`](skills/ai-native-code/) | Claude Code skill：方法论的可执行版本，Claude 自动加载并引导 4-Phase 流程 |
 
 ---
 
@@ -34,7 +31,7 @@
 要把这套方法论用到你自己的项目（无论新项目还是已有项目），先把 skill 装到用户级目录：
 
 ```bash
-cp -r ./skills/ai-native ~/.claude/skills/ai-native
+cp -r ./skills/ai-native-code ~/.claude/skills/ai-native-code
 ```
 
 装完后，在任何项目里启动 `claude`，skill 都会自动加载。
@@ -48,18 +45,6 @@ cp -r ./skills/ai-native ~/.claude/skills/ai-native
 ```
 
 Claude 会引导 Phase 0（意图凝练）→ Phase 1（契约骨架）→ Phase 2（MVP + 契约网络）→ Phase 3（意图驱动）。
-
-**或者手动拷贝模板**（不依赖 skill）：
-
-```bash
-cp -r ./starters/empty-project /path/to/new-project
-cd /path/to/new-project
-git init && git add . && git commit -m "feat: 项目初始化"
-claude
-> 帮我做 Phase 0：意图凝练。我想做一个 <你的 idea>
-```
-
-详见 [`starters/empty-project/README.md`](starters/empty-project/README.md)。
 
 ### 我要把这套方法论用到已有项目
 

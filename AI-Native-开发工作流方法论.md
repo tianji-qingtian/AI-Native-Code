@@ -435,11 +435,12 @@ NovelForge 18 Batch / 37 小时墙钟跑通**是特例**：
 
 ***
 
-## 10. 配套 Starter
+## 10. 配套资源
 
-仓库内 `starters/empty-project/` 提供空项目 starter 模板，可直接拷贝出去 `git init` 起新项目。
+- **Skill**：`skills/ai-native-code/` —— 安装到 `~/.claude/skills/ai-native-code/` 后，在任何项目中 Claude Code 自动加载
+- **Starter 模板**：见 [`AI-Native`](../AI-Native/) 仓库的 `starters/generic-project/` —— 通用项目骨架，可直接 `cp -r` 起新项目
 
-已有项目接入 playbook 待 NovelForge 试点结束（2026-06-09 后）再写——届时有更多实战数据。
+已有项目接入 playbook 持续完善中。
 
 ***
 
